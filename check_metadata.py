@@ -68,10 +68,11 @@ def snippetStartCheck(words):
             match = False
             for end in snippettags:
                 if string.endswith(end):
-                    match = True
-            print(str(match) + ": " + string + " has matching end tag." )
+                    print(string + " has matching end tag." )
+                else:
+                    sys.exit("Snippet Start or End does not match for" + string)
     else: 
-        sys.exit ("Snippet Start not detected")
+        print("Snippet Start not detected")
 
 def snippetAuthorCheck(words):
     author = 'sourceauthor:['
