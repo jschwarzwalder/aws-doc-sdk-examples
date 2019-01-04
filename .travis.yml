@@ -2,4 +2,4 @@
   python:
     - "3.6"
   script:
-    - check_metadata
+    - python check_metadata
